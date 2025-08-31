@@ -1,0 +1,1 @@
+# diplom_qa_guru_ui
