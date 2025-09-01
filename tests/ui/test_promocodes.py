@@ -18,7 +18,7 @@ def test_activate_promocode():
     with allure.step("Нажимаем кнопку Активировать"):
         promocode_page.click_activation_button()
 
-def test_fiil_empty_promocode(login_before_test):
+def test_fiil_empty_promocode():
     promocode_page = PromocodePage()
 
     with allure.step("Переходим на страницу промокодов"):
@@ -33,7 +33,7 @@ def test_fiil_empty_promocode(login_before_test):
     with allure.step('Проверяем ошибку пустого промокода'):
         promocode_page.error_with_empty_promo_input()
 
-def test_invalid_promocode(login_before_test):
+def test_invalid_promocode():
     promocode_page = PromocodePage()
 
     with allure.step("Переходим на страницу промокодов"):
