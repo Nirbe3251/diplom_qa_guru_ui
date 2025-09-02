@@ -4,7 +4,6 @@
 
 # Технологие, которые были использованы во время разработки проекта:
 <p align="center">
-
   <img src="https://raw.githubusercontent.com/Nirbe3251/Nirbe3251/main/images/logos/python-original.svg" width="50" title="Python">
   <img src="https://raw.githubusercontent.com/Nirbe3251/Nirbe3251/main/images/logos/pytest.png" width="50" title="Pytest">
   <img src="https://raw.githubusercontent.com/Nirbe3251/Nirbe3251/main/images/logos/intellij_pycharm.png" width="50" title="PyCharm">
@@ -17,3 +16,30 @@
   <img src="https://raw.githubusercontent.com/Nirbe3251/Nirbe3251/main/images/logos/tg.png" width="50" title="Telegram">
  
 </p>
+
+
+# Реализованные тест-кейсы для UI тестов
+- **Авторизация пользователя в системе**
+- **Авторизация пользователя без почты**
+- **Авторизация пользователя без пароля**
+- **Активация промокода**
+- **Активация несуществующего промокода**
+- **Активация промокода при вводе пробельного символа**
+- **Добавление книги в корзину**
+- **Открытие каталога книг**
+- **Открытие превью книги**
+
+# Реализованные тест-кейсы для API тестов
+- **Авторизация пользователя в системе**
+- **Добавление книги в корзину**
+- **Добавление книги в избранное**
+- **Удаление книги из корзины**
+- **Поиск книги**
+
+# Созданная задача в jenkins:
+
+# Allure Report
+
+# Интеграция с Allure TestOps
+
+# Уведомление в Telegram о прохождении тестов
