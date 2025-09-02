@@ -21,6 +21,9 @@ def test_activate_promocode():
 def test_fiil_empty_promocode():
     promocode_page = PromocodePage()
 
+    with allure.step("Открываем браузер"):
+        promocode_page.browser_open()
+
     with allure.step("Переходим на страницу промокодов"):
         promocode_page.redirect_to_promocodes()
 
@@ -35,6 +38,9 @@ def test_fiil_empty_promocode():
 
 def test_invalid_promocode():
     promocode_page = PromocodePage()
+
+    with allure.step("Открываем браузер"):
+        promocode_page.browser_open()
 
     with allure.step("Переходим на страницу промокодов"):
         promocode_page.redirect_to_promocodes()
