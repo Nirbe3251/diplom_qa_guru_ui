@@ -12,15 +12,6 @@ from utils import attach
 def load_env():
     load_dotenv()
 
-# @pytest.fixture()
-# def login_before_test():
-#     browser.open('https://www.litres.ru/')
-#     browser.element('[data-testid="user-button"]').click()
-#     browser.element('[name="email"]').type('daniil.efimow@mail.ru')
-#     browser.element('[data-testid="auth__button--continue"]').click()
-#     browser.element('[name="pwd"]').type('dandris2003')
-#     browser.element('[data-testid="auth__button--enter"]').click()
-#     browser.element('.Button-module__cohrkq__button').click()
 
 @pytest.fixture(scope="function", autouse=True)
 def setup_browser():
