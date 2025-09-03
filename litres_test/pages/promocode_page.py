@@ -22,3 +22,6 @@ class PromocodePage:
 
     def fill_negative_value_in_promo_input(self, value):
         browser.element('[name="promocode"]').type(value)
+
+    def check_activate_promocode(self):
+        browser.element('[data-testid="alert__description]"').should(have.text("Промокод активирован"))

@@ -23,8 +23,6 @@
 - **Авторизация пользователя без почты**
 - **Авторизация пользователя без пароля**
 - **Активация промокода**
-- **Активация несуществующего промокода**
-- **Активация промокода при вводе пробельного символа**
 - **Добавление книги в корзину**
 - **Открытие каталога книг**
 - **Открытие превью книги**
@@ -37,9 +35,12 @@
 - **Поиск книги**
 
 # Созданная задача в jenkins:
+https://jenkins.autotests.cloud/job/Nir_33_qa_guru_python_20_diplom/
 
-# Allure Report
+<img src="images/jenkins_task.png" alt="Image jenkins_task" width="625">
 
-# Интеграция с Allure TestOps
+# Allure TestOps
+<img src="images/allure testops.png" alt="Image allure testops" width="625">
 
-# Уведомление в Telegram о прохождении тестов
+# Видео прохождения теста
+<img src="images/test-video.gif" alt="Gif video" width="625">

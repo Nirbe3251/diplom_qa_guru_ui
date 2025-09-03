@@ -17,9 +17,12 @@ def test_activate_promocode():
         promocode_page.redirect_to_promocodes()
 
     with allure.step('Заполняем поле промокода'):
-        promocode_page.fill_promocode_input('promokodibonus2')
+        promocode_page.fill_promocode_input('promokodi30j')
 
     with allure.step("Нажимаем кнопку Активировать"):
         promocode_page.click_activation_button()
+
+    with allure.step("Проверяем, что промокод активирован"):
+        promocode_page.check_activate_promocode()
 
 
