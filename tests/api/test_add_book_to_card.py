@@ -2,9 +2,8 @@ import allure
 from litres_test.schema import schemas
 from jsonschema import validate
 
-@allure.title('Adding a book to the cart for an unauth user')
-@allure.feature('Unauth User')
-@allure.story('An unauthorized user, able to add a book to the cart.')
+@allure.title('Добавление книги неавторизованным пользователем')
+@allure.feature('Пользователь неавторизован')
 @allure.label('API')
 @allure.tag('smoke','API')
 @allure.severity('critical')

@@ -1,9 +1,9 @@
 import allure
 
 
-@allure.title('Delete a specific book to my favorites via API')
+@allure.title('Удаление книги из корзины через API')
 @allure.feature('API Operations')
-@allure.story('Delete a specific book to my favorites.')
+@allure.story('Удаление книги из корзины.')
 @allure.label('API')
 @allure.tag('smoke','API')
 @allure.severity('critical')

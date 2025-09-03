@@ -4,9 +4,9 @@ from litres_test.schema import schemas
 from jsonschema import validate
 
 
-@allure.title('Verify successful book search by title and type')
-@allure.feature('Book Search')
-@allure.story('Search books by title and type')
+@allure.title('Успешный поиск книги по названию и типу')
+@allure.feature('Поиск книги')
+@allure.story('Поиск книги по названию и типу')
 @allure.label('API')
 @allure.tag('smoke', 'API')
 @allure.severity('critical')

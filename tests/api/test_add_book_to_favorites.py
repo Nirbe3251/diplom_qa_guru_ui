@@ -1,9 +1,9 @@
 import allure
 
 
-@allure.title('Adding a book to favorites with API')
+@allure.title('Добавление книги в избранное через API')
 @allure.feature('API Operations')
-@allure.story('User to add a book to my favorites.')
+@allure.story('Пользователь добавляет книгу в избранное.')
 @allure.label('API')
 @allure.tag('smoke', 'API')
 @allure.severity('critical')

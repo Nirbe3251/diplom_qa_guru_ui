@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 def api_request():
     load_dotenv()
     BASE_URL = os.getenv('BASE_URL')
-    def _make_api_request(url, method="GET", data=None, headers=None):
+    def _make_api_request(url, method="GET", data=None, headers=None, cookies=None):
         url = BASE_URL + url
         with allure.step(f"API Request: {method}"):
             if method not in ["GET", "POST", "PUT", "PATCH", "DELETE"]:
@@ -22,15 +22,18 @@ def api_request():
 
             try:
                 if method == "GET":
-                    response = requests.get(url, headers=headers)
+                    response = requests.get(url, headers=headers, cookies=cookies)
                 elif method == "POST":
-                    response = requests.post(url, json=data, headers=headers)
+                    if headers and headers.get("Content-Type") == "application/x-www-form-urlencoded":
+                        response = requests.post(url, data=data, headers=headers, cookies=cookies)
+                    else:
+                        response = requests.post(url, json=data, headers=headers, cookies=cookies)
                 elif method == "PUT":
-                    response = requests.put(url, json=data, headers=headers)
+                    response = requests.put(url, json=data, headers=headers, cookies=cookies)
                 elif method == "PATCH":
-                    response = requests.patch(url, json=data, headers=headers)
+                    response = requests.patch(url, json=data, headers=headers, cookies=cookies)
                 elif method == "DELETE":
-                    response = requests.delete(url, headers=headers)
+                    response = requests.delete(url, headers=headers, cookies=cookies)
 
                 allure.attach(
                     body=response.request.method + " " + response.request.url,
